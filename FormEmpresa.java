@@ -47,6 +47,8 @@ public class FormEmpresa extends javax.swing.JDialog {
     
     private void setTextFields(Empresa empresa) {
       if (empresa != null) {
+          cbCategoria.setEnabled(false);
+          cbUsuario.setEnabled(false);
         tfCodigo.setText(""+empresa.getCodigo());
         tfDescricao.setText(empresa.getDescricao());
         cbCategoria.getModel().setSelectedItem(empresa.getCategoria());
@@ -322,6 +324,8 @@ public class FormEmpresa extends javax.swing.JDialog {
     }
     private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
         // TODO add your handling code here:
+        cbCategoria.setEnabled(true);
+        cbUsuario.setEnabled(true);
         editing = true;
         setStatusBotoes();
         setFieldsStatus(true);
@@ -335,8 +339,9 @@ public class FormEmpresa extends javax.swing.JDialog {
         String descricao = tfDescricao.getText();
         //String categoria = tfCategoria.getText();
         Categoria categoria = (Categoria) cbCategoria.getSelectedItem();
-        int codigo = Integer.parseInt(tfCodigo.getText());
         Usuario user = (Usuario) cbUsuario.getSelectedItem();
+        int codigo = Integer.parseInt(tfCodigo.getText());
+        
         
         if (codigo == 0) {
             var empresa = new Empresa(descricao, categoria, user);
