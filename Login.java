@@ -157,6 +157,8 @@ public class Login extends javax.swing.JFrame {
 	String os = System.getProperty("os.name").toLowerCase();
         Runtime rt = Runtime.getRuntime();
 	
+        if (JOptionPane.showConfirmDialog(null, "Essa funcionalidade só funciona se exportar o Jar do projeto, deseja ainda assim tentar executar?","Aviso", JOptionPane.YES_NO_OPTION) == 0) {
+            System.out.println("Tentei");
 	try{
 
 	    if (os.indexOf( "win" ) >= 0) {
@@ -185,7 +187,7 @@ public class Login extends javax.swing.JFrame {
        }
       return;		
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    }
     /**
      * @param args the command line arguments
      */
