@@ -12,16 +12,29 @@ public class Usuario {
     
     private int codigo;
     private String nome;
+    private String senha;
     private static int nextCodigo = 1;
 
     public Usuario() {
     }
 
-    public Usuario(String nome) {
+    public Usuario(String nome, String senha) {
         codigo = nextCodigo;
         nextCodigo++;
         this.nome = nome;
+        this.senha = senha;
     }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+    
+    
+    
 
     public int getCodigo() {
         return codigo;

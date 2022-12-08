@@ -9,12 +9,12 @@ public class UsuarioDAO implements DAO<Usuario> {
             ArrayList<Usuario>();
 
     public UsuarioDAO() {
-        users.add(new Usuario("Flavão"));
-        users.add(new Usuario("Lorayne"));
-        users.add(new Usuario("Benegripe"));
-        users.add(new Usuario("Mateus"));
-        users.add(new Usuario("Gael"));
-        users.add(new Usuario("Marcos"));
+        users.add(new Usuario("Flavão", "12345"));
+        users.add(new Usuario("Lorayne", "12345"));
+        users.add(new Usuario("Benegripe", "12345"));
+        users.add(new Usuario("Mateus", "12345"));
+        users.add(new Usuario("Gael", "12345"));
+        users.add(new Usuario("Marcos", "12345"));
     }
     
     
