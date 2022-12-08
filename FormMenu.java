@@ -31,7 +31,7 @@ public class FormMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SF Tech");
-        setBackground(new java.awt.Color(255, 0, 0));
+        setBackground(new java.awt.Color(0, 51, 255));
 
         panel1.setBackground(new java.awt.Color(0, 51, 255));
 
@@ -57,6 +57,7 @@ public class FormMenu extends javax.swing.JFrame {
                     .addComponent(jLabel2)))
         );
 
+        jMenuBar1.setBackground(new java.awt.Color(0, 51, 204));
         jMenuBar1.setForeground(new java.awt.Color(255, 255, 0));
 
         menuCategoria.setText("Declarações");
@@ -106,7 +107,7 @@ public class FormMenu extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 149, Short.MAX_VALUE)
+                .addGap(0, 128, Short.MAX_VALUE)
                 .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
