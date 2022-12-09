@@ -40,9 +40,7 @@ public class FormEmpresa extends javax.swing.JDialog {
         cbUsuario.setModel(modelUser);
         Empresa empresa = dao.get(posicao);
         setTextFields(empresa);
-        
-        
-        System.out.println(empresa.user.getNome());
+ 
     }
     
     private void setTextFields(Empresa empresa) {
