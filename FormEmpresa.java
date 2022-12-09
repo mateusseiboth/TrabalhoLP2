@@ -335,7 +335,6 @@ public class FormEmpresa extends javax.swing.JDialog {
         editing = false;
         setStatusBotoes();
         String descricao = tfDescricao.getText();
-        //String categoria = tfCategoria.getText();
         Categoria categoria = (Categoria) cbCategoria.getSelectedItem();
         Usuario user = (Usuario) cbUsuario.getSelectedItem();
         int codigo = Integer.parseInt(tfCodigo.getText());

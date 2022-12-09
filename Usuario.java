@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package trabalholp2;
 
 /**
@@ -9,7 +5,7 @@ package trabalholp2;
  * @author mateusseiboth
  */
 public class Usuario {
-    
+
     private int codigo;
     private String nome;
     private String senha;
@@ -32,9 +28,6 @@ public class Usuario {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    
-    
-    
 
     public int getCodigo() {
         return codigo;
@@ -51,7 +44,7 @@ public class Usuario {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -72,9 +65,7 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return codigo+"-"+nome;
+        return codigo + "-" + nome;
     }
-    
-    
-    
+
 }

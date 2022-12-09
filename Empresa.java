@@ -1,27 +1,31 @@
 package trabalholp2;
 
+/**
+ *
+ * @author mateusseiboth
+ */
 
 public class Empresa {
-  private static int nextCodigo = 1;
-  private int codigo;
-  private String descricao;
-  private Categoria categoria;
-  private Usuario user;
+    private static int nextCodigo = 1;
+    private int codigo;
+    private String descricao;
+    private Categoria categoria;
+    private Usuario user;
 
-  public Categoria getCategoria() {
-    return categoria;
-  }
-  
-  public Usuario getUsuario() {
-    return user;
-  }
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public Usuario getUsuario() {
+        return user;
+    }
 
     public Empresa(String descricao, Categoria categoria, Usuario user) {
         this.codigo = nextCodigo;
         nextCodigo++;
         this.descricao = descricao;
         this.categoria = categoria;
-        
+
         this.user = user;
     }
 
@@ -33,8 +37,6 @@ public class Empresa {
 
     }
 
-    
-    
     public int getCodigo() {
         return codigo;
     }
@@ -60,6 +62,5 @@ public class Empresa {
         }
         return true;
     }
-    
-    
+
 }
