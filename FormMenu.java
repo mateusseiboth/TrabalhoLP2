@@ -25,7 +25,7 @@ public class FormMenu extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         panel1 = new java.awt.Panel();
@@ -39,42 +39,50 @@ public class FormMenu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SF Tech");
         setBackground(new java.awt.Color(0, 51, 255));
+        getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
-        panel1.setBackground(new java.awt.Color(0, 51, 255));
+        panel1.setBackground(new java.awt.Color(0, 0, 0));
 
-        jLabel1.setText("SF® Inc.");
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Flavio e Seiboth Corp LTDA Inc Mei®");
 
-        jLabel2.setText("DB version: Null");
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("DB version: LinkedList");
 
         javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
         panel1.setLayout(panel1Layout);
         panel1Layout.setHorizontalGroup(
-                panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(panel1Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 594,
-                                        Short.MAX_VALUE)
-                                .addComponent(jLabel2)));
+            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel1Layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 580, Short.MAX_VALUE)
+                .addComponent(jLabel2))
+        );
         panel1Layout.setVerticalGroup(
-                panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel1)
-                                        .addComponent(jLabel2))));
+            panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
+                .addGap(128, 128, 128)
+                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2)))
+        );
 
-        jMenuBar1.setBackground(new java.awt.Color(0, 51, 204));
+        jLabel2.getAccessibleContext().setAccessibleName("");
+
+        getContentPane().add(panel1);
+
+        jMenuBar1.setBackground(new java.awt.Color(0, 0, 0));
+        jMenuBar1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jMenuBar1.setForeground(new java.awt.Color(255, 255, 0));
+        jMenuBar1.setToolTipText("");
         jMenuBar1.setOpaque(true);
 
         menuCategoria.setText("Declarações");
         menuCategoria.addMenuListener(new javax.swing.event.MenuListener() {
             public void menuCanceled(javax.swing.event.MenuEvent evt) {
             }
-
             public void menuDeselected(javax.swing.event.MenuEvent evt) {
             }
-
             public void menuSelected(javax.swing.event.MenuEvent evt) {
                 menuCategoriaMenuSelected(evt);
             }
@@ -85,10 +93,8 @@ public class FormMenu extends javax.swing.JFrame {
         menuProduto.addMenuListener(new javax.swing.event.MenuListener() {
             public void menuCanceled(javax.swing.event.MenuEvent evt) {
             }
-
             public void menuDeselected(javax.swing.event.MenuEvent evt) {
             }
-
             public void menuSelected(javax.swing.event.MenuEvent evt) {
                 menuProdutoMenuSelected(evt);
             }
@@ -99,10 +105,8 @@ public class FormMenu extends javax.swing.JFrame {
         menuSair.addMenuListener(new javax.swing.event.MenuListener() {
             public void menuCanceled(javax.swing.event.MenuEvent evt) {
             }
-
             public void menuDeselected(javax.swing.event.MenuEvent evt) {
             }
-
             public void menuSelected(javax.swing.event.MenuEvent evt) {
                 menuSairMenuSelected(evt);
             }
@@ -110,19 +114,6 @@ public class FormMenu extends javax.swing.JFrame {
         jMenuBar1.add(menuSair);
 
         setJMenuBar(jMenuBar1);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(panel1, javax.swing.GroupLayout.DEFAULT_SIZE,
-                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
-        layout.setVerticalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 128, Short.MAX_VALUE)
-                                .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE,
-                                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
