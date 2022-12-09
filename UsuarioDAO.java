@@ -1,12 +1,16 @@
 package trabalholp2;
 
+/**
+ *
+ * @author mateusseiboth
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class UsuarioDAO implements DAO<Usuario> {
-    
-    private ArrayList<Usuario> users = new
-            ArrayList<Usuario>();
+
+    private ArrayList<Usuario> users = new ArrayList<Usuario>();
 
     public UsuarioDAO() {
         users.add(new Usuario("Flavão", "12345"));
@@ -16,17 +20,15 @@ public class UsuarioDAO implements DAO<Usuario> {
         users.add(new Usuario("Gael", "12345"));
         users.add(new Usuario("Marcos", "12345"));
     }
-    
-    
-    
+
     @Override
     public void add(Usuario user) {
-      users.add(user);
+        users.add(user);
     }
 
     @Override
     public Usuario get(int indice) {
-        if ((users.size()>indice) && (indice>-1)){
+        if ((users.size() > indice) && (indice > -1)) {
             return users.get(indice);
         }
         return null;
@@ -39,23 +41,23 @@ public class UsuarioDAO implements DAO<Usuario> {
 
     @Override
     public void delete(Usuario user) {
-      int indice = users.indexOf(user);
-      if (indice != -1) {
-          users.remove(indice);
-      }
+        int indice = users.indexOf(user);
+        if (indice != -1) {
+            users.remove(indice);
+        }
     }
 
     @Override
     public void update(Usuario user) {
-      int indice = users.indexOf(user);
-      if (indice != -1) {
-          users.set(indice, user);
-      }
+        int indice = users.indexOf(user);
+        if (indice != -1) {
+            users.set(indice, user);
+        }
     }
 
     @Override
     public int size() {
         return users.size();
     }
-    
+
 }

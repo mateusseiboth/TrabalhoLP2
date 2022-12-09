@@ -1,5 +1,10 @@
 package trabalholp2;
 
+/**
+ *
+ * @author mateusseiboth
+ */
+
 public class Categoria {
     private int codigo;
     private String descricao;
@@ -32,8 +37,6 @@ public class Categoria {
         this.descricao = descricao;
     }
 
-    
-    
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -54,8 +57,7 @@ public class Categoria {
 
     @Override
     public String toString() {
-        return codigo+"-"+descricao;
+        return codigo + "-" + descricao;
     }
-    
-    
+
 }
