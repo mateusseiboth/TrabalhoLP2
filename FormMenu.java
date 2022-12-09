@@ -59,6 +59,7 @@ public class FormMenu extends javax.swing.JFrame {
 
         jMenuBar1.setBackground(new java.awt.Color(0, 51, 204));
         jMenuBar1.setForeground(new java.awt.Color(255, 255, 0));
+        jMenuBar1.setOpaque(true);
 
         menuCategoria.setText("Declarações");
         menuCategoria.addMenuListener(new javax.swing.event.MenuListener() {

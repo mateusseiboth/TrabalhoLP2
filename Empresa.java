@@ -6,9 +6,7 @@ public class Empresa {
   private int codigo;
   private String descricao;
   private Categoria categoria;
-  private double valor_unitario;
-  private int estoque;
-  public Usuario user;
+  private Usuario user;
 
   public Categoria getCategoria() {
     return categoria;
@@ -23,8 +21,7 @@ public class Empresa {
         nextCodigo++;
         this.descricao = descricao;
         this.categoria = categoria;
-        this.valor_unitario = valor_unitario;
-        this.estoque = estoque;
+        
         this.user = user;
     }
 
@@ -32,8 +29,8 @@ public class Empresa {
         this.codigo = codigo;
         this.descricao = descricao;
         this.categoria = categoria;
-        this.valor_unitario = valor_unitario;
-        this.estoque = estoque;
+        this.user = user;
+
     }
 
     
@@ -44,18 +41,6 @@ public class Empresa {
 
     public String getDescricao() {
         return descricao;
-    }
-
-    public double getValor_unitario() {
-        return valor_unitario;
-    }
-
-    public int getEstoque() {
-        return estoque;
-    }
-    
-    public double getValor_total() {
-        return valor_unitario * estoque;
     }
 
     @Override
