@@ -34,6 +34,7 @@ public class FormMenu extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         menuCategoria = new javax.swing.JMenu();
         menuProduto = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
         menuSair = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -101,6 +102,23 @@ public class FormMenu extends javax.swing.JFrame {
         });
         jMenuBar1.add(menuProduto);
 
+        jMenu1.setText("Usuarios");
+        jMenu1.addMenuListener(new javax.swing.event.MenuListener() {
+            public void menuCanceled(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuDeselected(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuSelected(javax.swing.event.MenuEvent evt) {
+                jMenu1MenuSelected(evt);
+            }
+        });
+        jMenu1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu1ActionPerformed(evt);
+            }
+        });
+        jMenuBar1.add(jMenu1);
+
         menuSair.setText("Sair");
         menuSair.addMenuListener(new javax.swing.event.MenuListener() {
             public void menuCanceled(javax.swing.event.MenuEvent evt) {
@@ -117,6 +135,18 @@ public class FormMenu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
+        // TODO add your handling code here:
+       
+    }//GEN-LAST:event_jMenu1ActionPerformed
+
+    private void jMenu1MenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_jMenu1MenuSelected
+        // TODO add your handling code here:
+        FormUser form = new FormUser(this, true, userDAO);
+        form.setLocationRelativeTo(null);
+        form.setVisible(true);
+    }//GEN-LAST:event_jMenu1MenuSelected
 
     private void menuSairMenuSelected(javax.swing.event.MenuEvent evt) {// GEN-FIRST:event_menuSairMenuSelected
         // TODO add your handling code here:
@@ -182,6 +212,7 @@ public class FormMenu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu menuCategoria;
     private javax.swing.JMenu menuProduto;
