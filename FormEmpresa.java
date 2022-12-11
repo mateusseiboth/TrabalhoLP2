@@ -10,8 +10,6 @@ import javax.swing.JOptionPane;
  * @author mateusseiboth 
  */
 
-
-
 public class FormEmpresa extends javax.swing.JDialog {
     private EmpresaDAO dao;
     private int posicao = 0;

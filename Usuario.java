@@ -20,6 +20,12 @@ public class Usuario {
         this.nome = nome;
         this.senha = senha;
     }
+    
+     public Usuario(int id, String nome, String senha) {
+        codigo = id;
+        this.nome = nome;
+        this.senha = senha;
+    }
 
     public String getSenha() {
         return senha;
