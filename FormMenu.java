@@ -45,7 +45,7 @@ public class FormMenu extends javax.swing.JFrame {
         panel1.setBackground(new java.awt.Color(0, 0, 0));
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Flavio e Seiboth Corp LTDA Inc Mei®");
+        jLabel1.setText("Seiboth Corp LTDA Inc Mei®");
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("DB version: LinkedList");
